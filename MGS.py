@@ -74,8 +74,10 @@ class Enemy(object):
         # hitboxtest
         # pygame.draw.rect(win, (255,0,0), self.hitbox,2)
 
+
 def redrawMenuWindow():
     win.blit(menu, (0, 0))
+
 
 def fmenu():
     musicMenu = pygame.mixer.music.load("data/menu.mp3")
@@ -145,7 +147,6 @@ def foutro():
             filtr.y = 600
             outro = False
         redrawOutroWindow()
-
     redrawGameWindow()
 
 
