@@ -1,3 +1,3 @@
-WSAD, strzałki - ruch
-spacja - zatwierdź, turbo
-enter - nie działa B)
+WSAD, strzałki - ruch \n
+spacja - zatwierdź, turbo \n
+enter - nie działa B) \n
