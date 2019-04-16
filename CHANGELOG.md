@@ -6,7 +6,7 @@ Wszystkie istotniejsze zmiany znajdą się w tym pliku.
 ### Added
 - Giereczka, podstawowe sprite-y, audio i plik wykonywalny dla użytkowników okienek.
 
-## [1.1.0] - 2019-04-06
+## [1.1.0] - 2019-04-16
 ### Added
 - Nowy obiekt: power-up.
 
