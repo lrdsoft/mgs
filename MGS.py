@@ -174,6 +174,7 @@ def foutro():
             pygame.QUIT()
         if keys[pygame.K_r]:
             filtr.miss = 0
+            filtr.vel = 0
             filtr.y = 600
             outro = False
         redrawOutroWindow()
