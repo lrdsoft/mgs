@@ -142,8 +142,8 @@ def fmenu():
 
 def redrawGameWindow():
     win.blit(bg, (0, 0))
-    text = font.render('Uniki: ' + str(filtr.miss), 1, (255, 255, 0))
-    win.blit(text, (490, 20))
+    text = font.render('Uniki: ' + str(filtr.miss), 0, (255, 255, 0))
+    win.blit(text, (430, 20))
     skalar.draw(win)
     filtr.move()
     filtr.draw(win)
@@ -154,10 +154,10 @@ def redrawGameWindow():
 
 def redrawOutroWindow():
     win.blit(bgOutro, (0, 0))
-    text = font.render('Porażka śmieciu: ' + str(filtr.miss) + ' czmychnięć', 1, (0, 0, 0))
-    win.blit(text, (120, 320))
-    text = font.render('r - jeszcze raz, escape - spierdalaj', 1, (0, 0, 0))
-    win.blit(text, (100, 350))
+    text = font.render('Porażka śmieciu: ' + str(filtr.miss) + ' czmychnięć', 0, (0, 0, 0))
+    win.blit(text, (80, 320))
+    text = font.render('r - jeszcze raz, escape - spierdalaj', 0, (0, 0, 0))
+    win.blit(text, (60, 350))
     pygame.display.update()
 
 
@@ -182,7 +182,7 @@ def foutro():
 
 fmenu()
 pygame.mixer.music.stop()
-font = pygame.font.SysFont('impact', 30, True)
+font = pygame.font.SysFont('sans', 30, True)
 skalar = Fish(300, 200, 70, 100)
 filtr = Enemy(100, 1, 160, 310)
 screwy = PowerUp(-40, 0, 35, 60)
