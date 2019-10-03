@@ -1,0 +1,45 @@
+x. Graphics:
+   graphics.py: classes for managing screen resolution
+   - pygame screen classes
+
+x. Assets:
+   sprites.py: classes for managing asset binding
+   - displaying assets
+
+x. Characters:
+   characters.py: classes for managing enviromental objects 
+
+x. Configuration:
+   - configuration parameters
+
+
+
+
+
+
+
+
+
+
+
+
+##Scrap:
+# Resolution:
+I created a PyPI module for this reason:
+
+pip install screeninfo
+
+The code:
+
+from screeninfo import get_monitors
+for m in get_monitors():
+    print(str(m))
+
+Result:
+
+monitor(1920x1080+1920+0)
+monitor(1920x1080+0+0)
+
+It supports multi monitor environments. Its goal is to be cross platform; for now it supports Cygwin and X11 but pull requests are totally welcome.
+
+#
