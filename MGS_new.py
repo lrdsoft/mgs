@@ -11,10 +11,14 @@ import graphics
 # new game instance starts:
 new_screen = graphics.Screen()
 # last used parameters used:
-new_screen.start_window("w", 800, 600)
-#new_screen.redraw_window()
+new_screen.start_window("w", 800, 800)
+# new_screen.redraw_window()
 
-while(True):
-    x = 0
+x = 0
+
+while(x < 100):
+    new_screen.redraw_window()
+    x = x + 1
+    print (x)
 
 pygame.quit()
