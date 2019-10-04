@@ -1,3 +1,8 @@
+# This module contains interactable objects of the game 
+# like the player, enemies, NPC's, interactable items in the game
+#
+#
+
 class Fish(object):
     def __init__(self, x, y, width, height):
         self.x = x
@@ -7,7 +12,6 @@ class Fish(object):
         self.vel = 10
         self.left = False
         self.right = False
-        # hitbox
         self.hitbox = (self.x + 20, self.y, 28, 60)
 
     def draw(self,win):
@@ -17,10 +21,9 @@ class Fish(object):
             win.blit(walkRight, (self.x, self.y))
         else:
             win.blit(idle, (self.x, self.y))
-        # hitbox
         self.hitbox = (self.x + 20, self.y, 28, 60)
         # hitboxtest
-        # pygame.draw.rect(win, (255,0,0), self.hitbox,2)
+        # pygame.draw.rect(win, (255, 0, 0), self.hitbox, 2)
 
 
 class Enemy(object):
@@ -32,7 +35,6 @@ class Enemy(object):
         self.vel = 3
         self.miss = 0
         self.vel = 0
-        # hitbox
         self.hitbox = (self.x + 40, self.y, 90, 300)
     
     def move(self):
@@ -46,7 +48,6 @@ class Enemy(object):
 
     def draw(self,win):
         win.blit(wFilter, (self.x, self.y))
-        # hitbox
         self.hitbox = (self.x + 40, self.y, 90, 300)
         # hitboxtest
         # pygame.draw.rect(win, (255,0,0), self.hitbox, 2)
@@ -59,7 +60,6 @@ class PowerUp(object):
         self.width = width
         self.height = height
         self.vel = 3
-        # hitbox
         self.hitbox = (self.x + 10, self.y, 30, 50)
 
     def move(self):
@@ -71,7 +71,6 @@ class PowerUp(object):
 
     def draw(self,win):
         win.blit(wScrew, (self.x, self.y))
-        # hitbox
         self.hitbox = (self.x + 10, self.y, 30, 50)
         # hitboxtest
         # pygame.draw.rect(win, (255,0,0), self.hitbox, 2)
